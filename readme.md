@@ -4,14 +4,15 @@ Renato Aurelio Cernades Ames
 
 ## Marching squares
 
-En el archivo `marching_squares.py` podrá encontrar el algoritmo completo del marching squares para crear figuras 2D en base a funciones implicitas.
+En el archivo `marching_squares.py` podrás encontrar el algoritmo completo del marching squares para crear figuras 2D en base a funciones implícitas.
+
 
 ### Input
 ```py
 def draw_curve(func, output_file: str, min_x:float, min_y:float, min_z:float, max_x: float, max_y: float, max_z: float, precision: float)
 ```
 
-`func`: Función implicita (float, float) -> float
+`func`: Función implícita (float, float) -> float
 
 `output_file`: Nombre del archivo output (string).
 
@@ -24,7 +25,7 @@ Crea un archivo tipo .eps.
 
 ### Tests
 
-En el archivo `test_marching_cubes.py` podrá encontrar 3 ejemplos. Puede correclo con el comando `pytest -q test_marching_squares.py`. Cuando se probó, demoró 57.65 segundos en correr. Y obtuve los siguientes resultados:
+En el archivo `test_marching_squares.py` podrás encontrar 3 ejemplos. Puedes correrlo con el comando `pytest -q test_marching_squares.py`. Cuando se probó, demoró 57.65 segundos en correr. Y obtuve los siguientes resultados:
 
 <image src="images/circle.png">
 
@@ -35,7 +36,7 @@ En el archivo `test_marching_cubes.py` podrá encontrar 3 ejemplos. Puede correc
 
 ## Marching cubes
 
-En el archivo `marching_cubes.py` podrá encontrar el algoritmo completo del marching squares para crear figuras 3D en base a funciones implicitas.
+En el archivo `marching_cubes.py` podrás encontrar el algoritmo completo del marching cubes para crear figuras 3D en base a funciones implícitas.
 
 
 ### Input
@@ -43,7 +44,7 @@ En el archivo `marching_cubes.py` podrá encontrar el algoritmo completo del mar
 def draw_curve(func, output_file: str, min_x:float, min_y:float, min_z:float, max_x: float, max_y: float, max_z: float, precision: float)
 ```
 
-`func`: Función implicita (float, float) -> float
+`func`: Función implícita (float, float) -> float
 
 `output_file`: Nombre del archivo output (string).
 
@@ -56,10 +57,14 @@ Crea un archivo tipo .off.
 
 ### Tests
 
-En el archivo `test_marching_cubes.py` podrá encontrar 3 ejemplos. Puede correclo con el comando `pytest -q test_marching_cubes.py`. Cuando se probó, demoró 12.47 minutos en correr. Y obtuve los siguientes resultados:
+En el archivo `test_marching_cubes.py` podrás encontrar 3 ejemplos. Puedes correrlo con el comando pytest -q `test_marching_cubes.py`. Cuando se probó, demoró 12.47 minutos en correr. Y obtuve los siguientes resultados:
 
 <image src="images/sphere.png">
 
 <image src="images/torus.png">
 
 <image src="images/heart.png">
+
+# Referencias
+
+Los casos del marching cubes fueron tomados de el siguiente repositorio: https://github.com/BorisTheBrave/mc-dc
