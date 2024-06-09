@@ -44,7 +44,7 @@ En el archivo `marching_cubes.py` podrás encontrar el algoritmo completo del ma
 def draw_curve(func, output_file: str, min_x:float, min_y:float, min_z:float, max_x: float, max_y: float, max_z: float, precision: float)
 ```
 
-`func`: Función implícita (float, float) -> float
+`func`: Función implícita (float, float, float) -> float
 
 `output_file`: Nombre del archivo output (string).
 
